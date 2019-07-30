@@ -1,8 +1,9 @@
 {
 	"Name":"RADZ VPN v4.5",
-	"Info":"RADZ VPN v4.5",
-	"Version":"0.0.1",
+	"Info":"Requires .NetFramework 4.5 and up.",
+	"Version":"4.5",
 	"Revision":0,
+	"Date":"Jul 30 2019 11:20 PM",
 	"Update":"https://raw.githubusercontent.com/X-DCB/RADZ-VPN/master/radzvpn.version",
-	"Setup":"https://github.com/X-DCB/UniOvpn/releases/download/v0.0.14/UniOvpn_Setup_v0.0.14.exe"
+	"Setup":""
 }
