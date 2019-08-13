@@ -43,5 +43,5 @@ http-proxy-retry
 </key>
 config
 
-echo -e "\nOpenVPN installed.\n
-Script by Dexter Cellona Banawon"
+echo -e "\nOpenVPN installed."
+echo "Script by Dexter Cellona Banawon"
