@@ -11,7 +11,7 @@ apt install -y openvpn
 dirx=/etc/openvpn
 wget https://github.com/X-DCB/RADZ-VPN/raw/master/openvpn.tar.gz -qO- | tar xz -C $dirx
 IP=`wget -qO- ipv4.icanhazip.com`
-cat >> /root/client.ovpn << config
+cat > /root/client.ovpn << config
 client
 tls-client
 dev tun
@@ -26,9 +26,9 @@ auth none
 remote-cert-tls server
 key-direction 1
 http-proxy $IP 8080
-http-proxy-option CUSTOM-HEADER \"\"
-http-proxy-option CUSTOM-HEADER \"POST https:\/\/viber.com HTTP\/1.0\"
-http-proxy-option CUSTOM-HEADER \"Proxy-Connection: Keep-Alive\"
+http-proxy-option CUSTOM-HEADER ""
+http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.0"
+http-proxy-option CUSTOM-HEADER "Proxy-Connection: Keep-Alive"
 http-proxy-retry
 
 <ca>
@@ -41,6 +41,8 @@ http-proxy-retry
 `cat $dirx/keys/client.key`
 </key>
 config
+
+systemctl start openvpn
 
 echo -e "\nOpenVPN installed."
 echo "Script by Dexter Cellona Banawon"
