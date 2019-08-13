@@ -18,6 +18,7 @@ bash -c "$(wget -qO- $radz/squid3.sh)"
 bash -c "$(wget -qO- $radz/banner.sh)"
 bash -c "$(wget -qO- $dex/stunnel.sh)"
 bash -c "$(wget -qO- $dex/scripts.sh)"
+cp /root/client.ovpn /home/vps/public_html/
 
 echo -ne "\nFinshed setting up components.\n
 Script by Dexter Cellona Banawon\n"
