@@ -13,5 +13,5 @@ services:
    - "8000:8000"
    - "3128:3128"
   volumes: 
-   - ./squid.conf:/squid.conf
+   - /etc/squid3/squid.conf:/squid.conf
   restart: always
