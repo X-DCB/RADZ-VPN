@@ -44,3 +44,5 @@ config
 
 echo -e "\nOpenVPN installed."
 echo "Script by Dexter Cellona Banawon"
+
+exit 0
