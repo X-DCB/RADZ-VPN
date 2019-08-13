@@ -42,7 +42,7 @@ http-proxy-retry
 </key>
 config
 
-systemctl start openvpn
+systemctl restart openvpn
 
 echo -e "\nOpenVPN installed."
 echo "Script by Dexter Cellona Banawon"
