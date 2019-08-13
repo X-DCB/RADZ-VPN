@@ -1,0 +1,17 @@
+version: "3.7"
+services: 
+ squidx-serv: 
+  image: xdcb/smart-bypass:squidX
+  container_name: squidX
+  command: "$sqx"
+  privileged: true
+  network_mode: host
+  cap_add: 
+   - NET_ADMIN
+  ports: 
+   - "8080:8080"
+   - "8000:8000"
+   - "3128:3128"
+  volumes: 
+   - ./squid.conf:/squid.conf
+  restart: always
