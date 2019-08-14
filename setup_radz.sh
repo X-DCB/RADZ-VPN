@@ -23,4 +23,7 @@ cp /root/client.ovpn /home/vps/public_html/
 echo -ne "\nFinshed setting up components.\n
 Script by Dexter Cellona Banawon\n"
 
+echo 'Rebooting VPS...'
+shutdown -r now
+
 exit 0
