@@ -16,6 +16,7 @@ bash -c "$(wget -qO- $radz/nginx.sh)"
 bash -c "$(wget -qO- $radz/ovpn-install)"
 bash -c "$(wget -qO- $radz/squid3.sh)"
 bash -c "$(wget -qO- $radz/banner.sh)"
+bash -c "$(wget -qO- $dex/badvpn.sh)"
 bash -c "$(wget -qO- $dex/stunnel.sh)"
 bash -c "$(wget -qO- $dex/scripts.sh)"
 cp /root/client.ovpn /home/vps/public_html/
