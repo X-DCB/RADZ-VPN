@@ -1,9 +1,0 @@
-{
-	"Name":"RADZ VPN v4.5",
-	"Info":"Requires .NetFramework 4.5 and up.",
-	"Version":"4.5",
-	"Revision":0,
-	"Date":"Jul 30 2019 11:20 PM",
-	"Update":"https://raw.githubusercontent.com/X-DCB/RADZ-VPN/master/radzvpn.version",
-	"Setup":""
-}
